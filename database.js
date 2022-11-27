@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 function DbConnect() {
-    console.log('coming here...', process.env.DB_URL);
-    const DB_URL = process.env.DB_URL;
+    // console.log('coming here...', process.env.DB_URL);
+    const DB_URL = "mongodb://localhost:27017/codershouse?authSource=admin&w=1";
+    // const DB_URL = process.env.DB_URL;
     // Database connection
     mongoose.connect(DB_URL, {
         useNewUrlParser: true,

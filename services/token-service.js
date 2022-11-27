@@ -1,6 +1,9 @@
 const jwt = require('jsonwebtoken');
-const accessTokenSecret = process.env.JWT_ACCESS_TOKEN_SECRET;
-const refreshTokenSecret = process.env.JWT_REFRESH_TOKEN_SECRET;
+// const accessTokenSecret = process.env.JWT_ACCESS_TOKEN_SECRET;
+// const refreshTokenSecret = process.env.JWT_REFRESH_TOKEN_SECRET;
+
+const accessTokenSecret = "123456";
+const refreshTokenSecret = "456789";
 const refreshModel = require('../models/refresh-model');
 class TokenService {
     generateTokens(payload) {

@@ -10,7 +10,8 @@ const userSchema = new Schema(
             required: false,
             get: (avatar) => {
                 if (avatar) {
-                    return `${process.env.BASE_URL}${avatar}`;
+                    // return `${process.env.BASE_URL}${avatar}`;
+                    return `https://voice-chat-backend.onrender.com${avatar}`;
                 }
                 return avatar;
             },
